@@ -1,7 +1,7 @@
 version: '3'
 services:
   bus:
-    image: chamala123/projectbus:latest
+    image: chamala123/projectbus
     ports:
       - "80:80"
     deploy:
