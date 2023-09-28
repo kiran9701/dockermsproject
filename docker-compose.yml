@@ -1,28 +1,28 @@
 version: '3'
 services:
-     Bus:
-    image: chamala123/projectbus
+     bus:
+    image: chamala123/projectbus :latest
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
      car:
-    image: chamala123/projectcar
+    image: chamala123/projectcar :latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   Bike:
-    image: chamala123/projectbike
+    image: chamala123/projectbike :latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   plane:
-    image: chamala123/projectplane
+    image: chamala123/projectplane :latest
     ports:
       - "83:80"
     deploy:
