@@ -1,29 +1,29 @@
 version: '3'
 services:
-  movies:
-    image: vinodvanama/projectmovies:latest
+     Bus:
+    image: chamala123/projectbus:latest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+     car:
+    image: chamala123/projectcar:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  train:
-    image: vinodvanama/projecttrain:latest
+  Bike:
+    image: chamala123/projectbike:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  dth:
-    image: vinodvanama/projectdth:latest
+  plane:
+    image: chamala123/projectplane:latest
     ports:
       - "83:80"
-    deploy:
-      replicas: 3
-
-  recharge:
-    image: vinodvanama/projectrecharge:latest
-    ports:
-      - "84:80"
     deploy:
       replicas: 3
