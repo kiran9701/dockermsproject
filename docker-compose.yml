@@ -1,7 +1,7 @@
 version: '3'
 services:
   bus:
-    image: vishnu155/bus155:latest
+    image: vishnu155/bus155:v1
     ports:
       - "80:80"
     deploy:
