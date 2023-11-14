@@ -1,29 +1,29 @@
 version: '3'
 services:
   bus:
-    image: vishnu155/air155
-    ports:
-      - "80:80"
-    deploy:
-      replicas: 3
-
-  car:
-    image: chamala123/projectcar:latest
+    image: chamalakiran/movies
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
-  Bike:
-    image: chamala123/projectbike:latest
+  dth:
+    image: chamalakiran/dth:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
-  plane:
-    image: chamala123/projectplane:latest
+  recharge:
+    image: chamalakiran/recharge:latest
     ports:
       - "83:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: chamalakiran/train:latest
+    ports:
+      - "84:80"
     deploy:
       replicas: 3
