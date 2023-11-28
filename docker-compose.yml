@@ -1,9 +1,9 @@
 version: '3'
 services:
   bus:
-    image: siri:v2
+    image: buss:v1
     ports:
-      - "82:80"
+      - "83:80"
     deploy:
       replicas: 3
 
