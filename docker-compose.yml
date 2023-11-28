@@ -1,9 +1,9 @@
 version: '3'
 services:
   bus:
-    image: chamalakiran/movies:v2
+    image: kiranchamala/movies:v3
     ports:
-      - "87:80"
+      - "91:80"
     deploy:
       replicas: 3
 
