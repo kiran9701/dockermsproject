@@ -1,9 +1,9 @@
 version: '3'
 services:
   bus:
-    image: kiranchamala/sirimovies:v5
+    image: kiranchamala/siri:v1
     ports:
-      - "92:80"
+      - "93:80"
     deploy:
       replicas: 3
 
