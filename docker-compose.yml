@@ -3,7 +3,7 @@ services:
   bus:
     image: kiranchamala/siri:v1
     ports:
-      - "93:80"
+      - "94:80"
     deploy:
       replicas: 3
 
