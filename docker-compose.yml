@@ -1,29 +1,29 @@
 version: '3'
 services:
   bus:
-    image: chamalakiran/ravibus:v1
+    image: chamalakiran/siribus:v1
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: chamalakiran/siridth:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: chamalakiran/sirirecharge:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
-  dth:
-    image: chamalakiran/ravidth:latest
-    ports:
-      - "88:80"
-    deploy:
-      replicas: 3
-
-  recharge:
-    image: chamalakiran/ravirecharge:latest
-    ports:
-      - "89:80"
-    deploy:
-      replicas: 3
-
   train:
-    image: chamalakiran/ravitrain:latest
+    image: chamalakiran/siritrain:latest
     ports:
-      - "90:80"
+      - "94:80"
     deploy:
       replicas: 3
