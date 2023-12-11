@@ -1,28 +1,28 @@
 version: '3'
 services:
   bus:
-    image: buss:v1
+    image: chamalakiran/siribus:v1
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   dth:
-    image: chamalakiran/dth:latest
+    image: chamalakiran/siridth:latest
     ports:
       - "88:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: chamalakiran/recharge:latest
+    image: chamalakiran/sirirecharge:latest
     ports:
       - "89:80"
     deploy:
       replicas: 3
 
   train:
-    image: chamalakiran/train:latest
+    image: chamalakiran/siritrain:latest
     ports:
       - "90:80"
     deploy:
