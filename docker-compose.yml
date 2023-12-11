@@ -8,21 +8,21 @@ services:
       replicas: 3
 
   dth:
-    image: chamalakiran/siridth:latest
+    image: chamalakiran/siridth:v1
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: chamalakiran/sirirecharge:latest
+    image: chamalakiran/sirirecharge:v1
     ports:
       - "83:80"
     deploy:
       replicas: 3
 
   train:
-    image: chamalakiran/siritrain:latest
+    image: chamalakiran/siritrain:v1
     ports:
       - "94:80"
     deploy:
