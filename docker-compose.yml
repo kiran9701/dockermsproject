@@ -24,6 +24,6 @@ services:
   train:
     image: chamalakiran/siritrain:latest
     ports:
-      - "94:80"
+      - "84:80"
     deploy:
       replicas: 3
